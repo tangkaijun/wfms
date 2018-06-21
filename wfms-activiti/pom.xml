@@ -16,8 +16,13 @@
     <dependencies>
 
         <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
+            <groupId>com.github.kjtang.wfms</groupId>
+            <artifactId>wfms-common</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.github.kjtang.wfms</groupId>
+            <artifactId>wfms-core</artifactId>
         </dependency>
 
     </dependencies>

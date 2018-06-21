@@ -19,8 +19,8 @@
     <dependencies>
 
         <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
+            <groupId>com.github.kjtang.wfms</groupId>
+            <artifactId>wfms-activiti</artifactId>
         </dependency>
 
     </dependencies>

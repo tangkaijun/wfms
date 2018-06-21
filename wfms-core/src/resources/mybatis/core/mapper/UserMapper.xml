@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+  <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.github.kjtang.wfms.core.mapper.UserMapper">
+
+	<!--插入实体-->
+	<insert id="insert" parameterType="com.github.kjtang.wfms.core.entity.User">
+		INSERT INTO sys_user(username,password) VALUES (#{username},#{password})
+	</insert>
+
+	<update id="update" parameterType="com.github.kjtang.wfms.core.entity.User">
+
+	</update>
+
+	<delete id="delete" parameterType="com.github.kjtang.wfms.core.entity.User">
+
+	</delete>
+
+	<select id="get" parameterType="com.github.kjtang.wfms.core.entity.User" resultType="com.github.kjtang.wfms.core.entity.User">
+		SELECT  * FROM sys_user
+		<where>
+			<if test="id!=null">
+				and id = #{id}
+			</if>
+			<if test="username!=null and username!=''">
+				and username=#{username}
+			</if>
+		</where>
+	</select>
+
+</mapper>
